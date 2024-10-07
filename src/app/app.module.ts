@@ -13,6 +13,10 @@ import { ProductsComponent } from './Pages/products/products.component';
 import { CardItemsComponent } from './components/card-items/card-items.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './Pages/login/login.component';
+import { RegisterComponent } from './Pages/register/register.component';
+import { CarrinhoComponent } from './Pages/carrinho/carrinho.component';
+import { ForgotPassComponent } from './Pages/forgot-pass/forgot-pass.component';
 
 
 
@@ -26,7 +30,11 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     CardItemsComponent,
     TestimonialsComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent,
+    CarrinhoComponent,
+    ForgotPassComponent
   ],
   imports: [
     BrowserModule,

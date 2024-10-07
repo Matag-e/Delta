@@ -16,3 +16,8 @@ font-family: "Roboto", sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
+
+.linhaReta {
+  border: 1px solid rgba(65, 65, 65, 0.116);
+  margin: 10px;
+}
