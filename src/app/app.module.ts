@@ -14,7 +14,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ProductsComponent } from './Pages/products/products.component';
-import { CardItemsComponent } from './components/card-items/card-items.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './Pages/login/login.component';
@@ -34,7 +33,6 @@ import { MatTabsModule } from '@angular/material/tabs';
     IntroductionComponent,
     ProductsComponent,
     HomeComponent,
-    CardItemsComponent,
     TestimonialsComponent,
     FooterComponent,
     LoginComponent,
