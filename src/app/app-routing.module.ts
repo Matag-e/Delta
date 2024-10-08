@@ -8,22 +8,18 @@ import { CarrinhoComponent } from './Pages/carrinho/carrinho.component';
 import { ForgotPassComponent } from './Pages/forgot-pass/forgot-pass.component';
 import { FornecedoresComponent } from './Pages/fornecedores/fornecedores.component';
 
-
-
-
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'products', component: ProductsComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'carrinho', component: CarrinhoComponent},
-  {path: 'forgotPass', component: ForgotPassComponent},
-  {path: 'fornecedores', component: FornecedoresComponent}  
-
+  { path: 'home', component: HomeComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'carrinho', component: CarrinhoComponent },
+  { path: 'forgotPass', component: ForgotPassComponent },
+  { path: 'fornecedores', component: FornecedoresComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -5,7 +5,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgIconsModule } from '@ng-icons/core';
 import { ionPersonOutline } from '@ng-icons/ionicons';
-import { ionLogoWhatsapp, ionLogoFacebook, ionLogoInstagram } from '@ng-icons/ionicons';
+import {
+  ionLogoWhatsapp,
+  ionLogoFacebook,
+  ionLogoInstagram,
+} from '@ng-icons/ionicons';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
@@ -21,9 +25,6 @@ import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { FornecedoresComponent } from './Pages/fornecedores/fornecedores.component';
 import { MatTabsModule } from '@angular/material/tabs';
-
-
-
 
 @NgModule({
   declarations: [
@@ -51,12 +52,10 @@ import { MatTabsModule } from '@angular/material/tabs';
       ionPersonOutline,
       ionLogoWhatsapp,
       ionLogoFacebook,
-      ionLogoInstagram
-    })
+      ionLogoInstagram,
+    }),
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
