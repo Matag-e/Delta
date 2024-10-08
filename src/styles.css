@@ -21,3 +21,5 @@ font-family: "Roboto", sans-serif;
   border: 1px solid rgba(65, 65, 65, 0.116);
   margin: 10px;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

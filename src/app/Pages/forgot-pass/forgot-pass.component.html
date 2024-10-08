@@ -4,7 +4,7 @@
       <div class="loginBox">
         <h1>Esqueceu a senha?</h1>
         <br />
-        <form id="reset-password-form" action="send-mail.php" method="post">
+        <form (ngSubmit)="submitResetPassword($event)" #resetPassword="ngForm">
           <p class="forgotEmail">Coloque seu email de cadastro</p>
           <div class="inputBox">
             <label for="email">Email</label><br />

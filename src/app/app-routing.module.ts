@@ -6,6 +6,9 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegisterComponent } from './Pages/register/register.component';
 import { CarrinhoComponent } from './Pages/carrinho/carrinho.component';
 import { ForgotPassComponent } from './Pages/forgot-pass/forgot-pass.component';
+import { FornecedoresComponent } from './Pages/fornecedores/fornecedores.component';
+
+
 
 
 const routes: Routes = [
@@ -14,7 +17,9 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'carrinho', component: CarrinhoComponent},
-  {path: 'forgotPass', component: ForgotPassComponent}
+  {path: 'forgotPass', component: ForgotPassComponent},
+  {path: 'fornecedores', component: FornecedoresComponent}  
+
 ];
 
 @NgModule({

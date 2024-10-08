@@ -17,6 +17,11 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegisterComponent } from './Pages/register/register.component';
 import { CarrinhoComponent } from './Pages/carrinho/carrinho.component';
 import { ForgotPassComponent } from './Pages/forgot-pass/forgot-pass.component';
+import { FormsModule } from '@angular/forms';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FornecedoresComponent } from './Pages/fornecedores/fornecedores.component';
+import { MatTabsModule } from '@angular/material/tabs';
+
 
 
 
@@ -34,11 +39,14 @@ import { ForgotPassComponent } from './Pages/forgot-pass/forgot-pass.component';
     LoginComponent,
     RegisterComponent,
     CarrinhoComponent,
-    ForgotPassComponent
+    ForgotPassComponent,
+    FornecedoresComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    MatTabsModule,
     NgIconsModule.withIcons({
       ionPersonOutline,
       ionLogoWhatsapp,
@@ -46,7 +54,9 @@ import { ForgotPassComponent } from './Pages/forgot-pass/forgot-pass.component';
       ionLogoInstagram
     })
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

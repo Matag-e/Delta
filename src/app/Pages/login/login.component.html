@@ -2,7 +2,7 @@
     <div class="loginContainer">
       <div class="loginBox">
         <h1>Faça seu login</h1><br>
-        <form action="">
+        <form (ngSubmit)="submitForm($event)" #loginForm="ngForm">
           <div class="inputBox">
             <label for="email">Email</label><br>
             <input type="email" id="email" name="email" required/>
