@@ -10,9 +10,9 @@ export class CarrinhoComponent {
   private isCompraFinalizada = false;
 
   produtos = [
-    { nome: 'Produto 1', preco: 10, quantidade: 2 },
-    { nome: 'Produto 1', preco: 10, quantidade: 2 },
-    { nome: 'Produto 1', preco: 10, quantidade: 2 },
+    { nome: 'MOP', preco: 150, quantidade: 1 },
+    { nome: 'Cera', preco: 50, quantidade: 3 },
+    { nome: 'Luva', preco: 15, quantidade: 25},
     // adicione mais produtos conforme necessário
   ];
 

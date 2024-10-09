@@ -5,7 +5,7 @@
   }
   
   .card {
-    width: 28rem;
+    width: 15rem;
     margin: 30px;
     height: 540px;
     background-color: #000000;
@@ -17,7 +17,7 @@
   
   .card-img-top {
     border-radius: 15px 15px 0 0;
-    height: 350px;
+    height: 330px;
   }
   .product-box {
     background-color: #292828;
@@ -25,6 +25,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     overflow: hidden;
+  }
+
+  .card-text{
+    color: white;
+    font-size: 15px;
   }
   
   .product-info {
@@ -43,14 +48,12 @@
   }
   
   .buy-button {
-    padding: 10px 20px;
-    font-size: 18px;
     background-color: rgb(93, 184, 37);
     color: #ffffff;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .buy-button:last-child {

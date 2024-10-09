@@ -4,11 +4,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgIconsModule } from '@ng-icons/core';
-import { ionPersonOutline } from '@ng-icons/ionicons';
+
 import {
+  ionPersonOutline,
   ionLogoWhatsapp,
   ionLogoFacebook,
   ionLogoInstagram,
+  ionAddOutline,
+  ionRemove,
+  ionAddCircleOutline,
+  ionRemoveCircleOutline,
 } from '@ng-icons/ionicons';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeComponent } from './Pages/home/home.component';
@@ -51,6 +56,10 @@ import { MatTabsModule } from '@angular/material/tabs';
       ionLogoWhatsapp,
       ionLogoFacebook,
       ionLogoInstagram,
+      ionAddOutline,
+      ionRemove,
+      ionRemoveCircleOutline,
+      ionAddCircleOutline,
     }),
   ],
   providers: [provideAnimationsAsync()],

@@ -1,23 +1,49 @@
-h2{
-    color: rgb(93, 184, 37);
+/* Estilos do Formulário */
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
 }
 
 .form-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
-  border: 1px solid black;
-  padding: 10px;
-  box-shadow: 8px 10px 10px rgb(46, 46, 46);
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 35px;
+}
+
+.form-row > h2{
+  margin-bottom: 30px;
+  text-align: left;
+  width: 100%;
+  color: black;
 }
 
 .form-group {
-  flex: 2.5;
-  margin-bottom: 3.5em;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(33.333% - 20px); /* 3 colunas com espaço entre elas */
+  margin-bottom: 20px;
 }
 
-input[id="enviar"] {
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+}
+
+input[id="enviar"]{
+
   padding: 10px 20px;
   font-size: 20px;
   background-color: rgb(93, 184, 37);
@@ -29,22 +55,23 @@ input[id="enviar"] {
   text-decoration: none;
 }
 
-input[id="enviar"]:hover {
+input[id="enviar"]:hover{
+
   color: rgb(255, 255, 255);
-  background-color: rgb(93, 184, 37);
+  background-color: rgb(0, 0, 0);
 }
 
 .form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5em;
-  color: rgb(93, 184, 37);
+  color : rgb(0, 0, 0)
 }
 
-.form-group input,
+.form-group input ,
 .form-group select {
-  width: 100%;
-  border: 1px solid rgb(93, 184, 37);
+  width: 100%;;
+  border: 1px solid rgba(0, 0, 0, 0.247);
   border-radius: 4px;
   font-size: 1em;
   height: 40px;
@@ -61,22 +88,39 @@ input[id="enviar"]:hover {
 #formContainer .generated-form {
   background: #f1f1f1;
   padding: 1em;
-  margin-bottom: 1em;
   border-radius: 4px;
   position: relative;
 }
 
 .regBox {
   position: relative;
-  width: 550px;
+  width: 80%;
   margin: 0 auto 10px;
   text-align: center;
   margin-top: 50px;
-  background-color: rgba(22, 6, 255, 0);
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
+
 }
 
 .regBox > h1 {
   color: rgb(150, 150, 150);
   font-weight: 500;
+}
+
+input[id="login"]  {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: rgb(93, 184, 37) !important;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px;
+  align-items: center;
+  text-decoration: none;
+}
+
+input[id="login"]:hover {
+  color: #fff;
 }
