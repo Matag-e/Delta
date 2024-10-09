@@ -133,6 +133,7 @@
                   name="cep"
                   id="cepEmissao"
                   placeholder="12345-678"
+                  (blur)="buscarEndereco($event)"
                 />
               </div>
 
@@ -189,6 +190,7 @@
                   name="cep"
                   id="cepEntrega"
                   placeholder="12345-678"
+                  (blur)="buscarEnderecoEntrega($event)"
                 />
               </div>
 
