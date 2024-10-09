@@ -5,11 +5,11 @@
         <form (ngSubmit)="submitForm($event)" #loginForm="ngForm">
           <div class="inputBox">
             <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" required/>
+            <input type="email" id="email" name="email" required [(ngModel)]="loginData.email"/>
           </div>
           <div class="inputBox">
             <label for="password">Senha</label><br>
-            <input id="password" type="password" required />
+            <input id="password" type="password" required [(ngModel)]="loginData.password"/>
           </div>
           <div class="inputBox">
             <input id="login" type="submit" value="Entrar" />

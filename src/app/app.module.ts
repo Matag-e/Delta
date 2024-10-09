@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgIconsModule } from '@ng-icons/core';
+import { HttpClientModule } from '@angular/common/http';
 import {
   ionPersonOutline,
   ionLogoWhatsapp,
@@ -29,6 +30,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { FornecedoresComponent } from './Pages/fornecedores/fornecedores.component';
 import { MatTabsModule } from '@angular/material/tabs';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     AppRoutingModule,
     FormsModule,
     MatTabsModule,
+    HttpClientModule,
     NgIconsModule.withIcons({
       ionPersonOutline,
       ionLogoWhatsapp,

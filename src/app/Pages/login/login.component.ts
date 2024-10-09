@@ -7,6 +7,12 @@ import Swal from 'sweetalert2';
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
+  loginData={
+    email: '',
+    password: '',
+  }
+
+
   submitForm(event: Event) {
     event.preventDefault();
     const emailInput = (document.getElementById('email') as HTMLInputElement).value;

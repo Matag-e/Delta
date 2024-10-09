@@ -1,0 +1,23 @@
+{
+  "razaoSocial": "Mateus",
+  "nomeFantasia": "Mateus Santos",
+  "cnpj": "32132131",
+  "estadual": 32132131,
+  "ccm": 321321321,
+  "codigo": 21321,
+  "email": "mateussantos212@gmail.com",
+  "password": "$2b$10$Ueb93p27KaYLuSXOowhcXuaH0hM3vRUZPl2treLlWexEGm4A4wY.6",
+  "name": "Mateus Santos",
+  "tel": "11991814636",
+  "area": "TI",
+  "cepEmissao": 21321,
+  "logradouroEmissao": "Travessa Cascolar",
+  "numeroEmissao": 2321,
+  "complementoEmissao": "Odapel",
+  "bairroEmissao": "Jaguaré",
+  "cepEntrega": 21321,
+  "logradouroEntrega": "Avenida Avenida Jaguaré",
+  "numeroEntrega": 551,
+  "complementoEntrega": "Odapel",
+  "bairroEntrega": "Jardim Europa"
+}

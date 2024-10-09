@@ -3,24 +3,26 @@
     <div class="regBox">
       <h2>Cadastro De Usuario</h2>
       <br />
-      <form action="">
+      <form (ngSubmit)="onSubmit()" #userForm="ngForm">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Razão Social</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="RazaoSocial"
+              name="RazaoSocial"
               placeholder="Ex: João da Silva / Empresa LTDA"
+              [(ngModel)]="user.razaoSocial"
             />
           </div>
           <div class="form-group">
             <label for="name">Nome Fantasia</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="NomeFantasia"
+              name="NomeFantasia"
               placeholder="Ex: João da Silva / Empresa LTDA"
+              [(ngModel)]="user.nomeFantasia"
             />
           </div>
 
@@ -30,6 +32,7 @@
               type="text"
               id="cnpj"
               name="cnpj"
+              [(ngModel)]="user.cnpj"
               placeholder="Ex: 12.345.678/0001-99"
               required
             />
@@ -41,18 +44,31 @@
               type="number"
               id="estadual"
               name="estadual"
+              [(ngModel)]="user.estadual"
               placeholder="123.456.789.123"
             />
           </div>
 
           <div class="form-group">
             <label for="ccm"> Inscrição CCM</label>
-            <input type="number" id="ccm" name="ccm" placeholder="" />
+            <input
+              type="number"
+              id="ccm"
+              name="ccm"
+              [(ngModel)]="user.ccm"
+              placeholder=""
+            />
           </div>
 
           <div class="form-group">
             <label for="codigo"> Codigo Contabil </label>
-            <input type="number" id="codigo" name="codigo" placeholder="1234" />
+            <input
+              type="number"
+              id="codigo"
+              name="codigo"
+              [(ngModel)]="user.codigo"
+              placeholder="1234"
+            />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
@@ -60,6 +76,7 @@
               type="email"
               id="email"
               name="email"
+              [(ngModel)]="user.email"
               placeholder="Ex: exemplo@dominio.com"
             />
           </div>
@@ -71,6 +88,7 @@
               name="password"
               type="password"
               minlength="6"
+              [(ngModel)]="user.password"
               required
               placeholder="Digite uma senha"
             />
@@ -82,6 +100,7 @@
               id="confirmPassword"
               name="confirmPassword"
               type="password"
+              [(ngModel)]="user.confirmPassword"
               minlength="6"
               required
               placeholder="Confirme sua senha"
@@ -95,11 +114,16 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Nome Completo</label>
-                <input type="text" name="name" id="name" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  [(ngModel)]="user.name"
+                />
               </div>
               <div class="form-group">
                 <label for="tel"> Telefone de Contato</label>
-                <input type="tel" name="tel" id="tel" />
+                <input type="tel" name="tel" id="tel" [(ngModel)]="user.tel" />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
@@ -107,6 +131,7 @@
                   type="email"
                   name="email"
                   id="email"
+                  [(ngModel)]="user.email"
                   placeholder="exemplo.exemplo@gmail.com"
                 />
               </div>
@@ -117,7 +142,7 @@
               </div>
               <div class="form-group">
                 <label for="area">Area</label>
-                <input type="text" name="area" id="area" />
+                <input type="text" name="area" id="area" [(ngModel)]="user.area"/>
               </div>
             </div>
           </div>
@@ -130,8 +155,9 @@
                 <label for="cepEmissao">CEP</label>
                 <input
                   type="number"
-                  name="cep"
+                  name="cepEmissao"
                   id="cepEmissao"
+                  [(ngModel)]="user.cepEmissao"
                   placeholder="12345-678"
                   (blur)="buscarEndereco($event)"
                 />
@@ -141,8 +167,9 @@
                 <label for="logradouroEmissao">Logradouro</label>
                 <input
                   type="text"
-                  name="logradouro"
+                  name="logradouroEmissao"
                   id="logradouroEmissao"
+                  [(ngModel)]="user.logradouroEmissao"
                   placeholder="Logradouro"
                 />
               </div>
@@ -151,8 +178,9 @@
                 <label for="numero">Numero</label>
                 <input
                   type="number"
-                  id="numero"
-                  name="numero"
+                  id="numeroEmissao"
+                  name="numeroEmissao"
+                  [(ngModel)]="user.numeroEmissao"
                   placeholder="Número"
                 />
               </div>
@@ -160,8 +188,9 @@
                 <label for="complemento">Complemento</label>
                 <input
                   type="text"
-                  id="complemento"
-                  name="complemento"
+                  id="complementoEmissao"
+                  name="complementoEmissao"
+                  [(ngModel)]="user.complementoEmissao"
                   placeholder="Complemento"
                 />
               </div>
@@ -171,7 +200,8 @@
                 <input
                   type="text"
                   id="bairroEmissao"
-                  name="bairro"
+                  name="bairroEmissao"
+                  [(ngModel)]="user.bairroEmissao"
                   placeholder="Bairro"
                 />
               </div>
@@ -187,8 +217,9 @@
                 <label for="cepEntrega">CEP</label>
                 <input
                   type="number"
-                  name="cep"
+                  name="cepEntrega"
                   id="cepEntrega"
+                  [(ngModel)]="user.cepEntrega"
                   placeholder="12345-678"
                   (blur)="buscarEnderecoEntrega($event)"
                 />
@@ -198,8 +229,9 @@
                 <label for="logradouroEntrega">Logradouro</label>
                 <input
                   type="text"
-                  name="logradouro"
+                  name="logradouroEntrega"
                   id="logradouroEntrega"
+                  [(ngModel)]="user.logradouroEntrega"
                   placeholder="Logradouro"
                 />
               </div>
@@ -208,8 +240,9 @@
                 <label for="numero">Número</label>
                 <input
                   type="number"
-                  id="numero"
-                  name="numero"
+                  id="numeroEntrega"
+                  name="numeroEntrega"
+                  [(ngModel)]="user.numeroEntrega"
                   placeholder="Número"
                 />
               </div>
@@ -218,8 +251,9 @@
                 <label for="complemento">Complemento</label>
                 <input
                   type="text"
-                  id="complemento"
-                  name="complemento"
+                  id="complementoEntrega"
+                  name="complementoEntrega"
+                  [(ngModel)]="user.complementoEntrega"
                   placeholder="Complemento"
                 />
               </div>
@@ -229,13 +263,17 @@
                 <input
                   type="text"
                   id="bairroEntrega"
-                  name="bairro"
+                  name="bairroEntrega"
+                  [(ngModel)]="user.bairroEntrega"
                   placeholder="Endereço de Entrega"
                 />
               </div>
             </div>
           </div>
         </section>
+        <div class="form-group">
+          <button type="submit" class="btn">Cadastrar</button>
+        </div>
       </form>
     </div>
   </div>
