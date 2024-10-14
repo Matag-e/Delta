@@ -29,6 +29,7 @@ import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { FornecedoresComponent } from './Pages/fornecedores/fornecedores.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { EstoqueComponent } from './Pages/estoque/estoque.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     CarrinhoComponent,
     ForgotPassComponent,
     FornecedoresComponent,
+    EstoqueComponent,
   ],
   imports: [
     BrowserModule,

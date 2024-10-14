@@ -94,58 +94,5 @@ export class RegisterComponent {
       );
     }
   }
-  checkEmptyFields() {
-    const emptyFields: string[] = []; // Array de strings para armazenar os campos vazios
-
-    Object.keys(this.user).forEach((key) => {
-      if (!this.user[key as keyof typeof this.user]) {
-        // Fazendo o cast para 'keyof typeof this.user'
-        emptyFields.push(key);
-      }
-    });
-
-    if (emptyFields.length > 0) {
-      Swal.fire({
-        title: 'Erro',
-        text: 'Preencha todos os campos obrigatórios!',
-        icon: 'error',
-        confirmButtonText: 'Ok',
-      });
-      return false; // Retorna falso se houver campos vazios
-    }
-    return true; // Retorna verdadeiro se todos os campos estão preenchidos
-  }
-
-  onSubmit() {
-    if (!this.checkEmptyFields()) {
-      return;
-    }
-
-    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http
-      .post('http://localhost:3000/register', this.user, {
-        headers,
-        responseType: 'text',
-      })
-      .subscribe(
-        (response) => {
-          console.log('Usuario Cadastrado com sucesso!', response);
-          Swal.fire({
-            title: 'Sucesso',
-            text: 'Usuário cadastrado com sucesso!',
-            icon: 'success',
-            confirmButtonText: 'Ok',
-          });
-        },
-        (error) => {
-          console.error('Erro ao cadastrar o usuário:', error);
-          Swal.fire({
-            title: 'Erro',
-            text: 'Erro ao cadastrar o usuário.',
-            icon: 'error',
-            confirmButtonText: 'Ok',
-          });
-        }
-      );
-  }
+ 
 }
